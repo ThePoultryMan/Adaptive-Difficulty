@@ -20,6 +20,18 @@ repositories {
 		name = 'Quilt Snapshots'
 		url = 'https://maven.quiltmc.org/repository/snapshot'
 	}
+	// Maven repositories for testing and debugging mods.
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/releases'
+	}
 }
 
 dependencies {
@@ -30,6 +42,10 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// Mods for testing and debugging.
+	modImplementation "com.terraformersmc:modmenu:3.1.1"
+	modImplementation "maven.modrinth:sodium:mc1.18.2-0.4.1"
 }
 
 processResources {

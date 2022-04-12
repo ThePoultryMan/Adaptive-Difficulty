@@ -1,34 +1,34 @@
 {
     "schemaVersion": 1,
-    "id": "modid",
-    "version": "0.1.0",
+    "id": "adaptdifficulty",
+    "version": "${version}",
 
-    "name": "Mod Name",
-    "description": "This mod is a template for other mods.",
+    "name": "Adaptive Difficulty",
+    "description": "A Minecraft mod that makes the game get harder as you get stronger.",
     "authors": [
         "ThePoultryMan"
     ],
     "contact": {
-        "sources": "https://github.com/ThePoultryMan/Mod-Template"
+        "sources": "https://github.com/ThePoultryMan/Adaptive-Difficulty"
     },
 
-    "license": "CC0-1.0",
-    "icon": "assets/modid/icon.png",
+    "license": "MIT",
+    "icon": "assets/adaptdifficulty/icon.png",
 
     "environment": "*",
     "entrypoints": {
         "main": [
-            "thepoultryman.modid.ModClass"
+            "thepoultryman.adaptdifficulty.AdaptiveDifficulty"
         ]
     },
     "mixins": [
-        "modid.mixins.json"
+        "adaptdifficulty.mixins.json"
     ],
 
     "depends": {
         "fabricloader": ">=0.12.12",
         "fabric": "*",
-        "minecraft": "1.18.x",
+        "minecraft": "1.18.2",
         "java": ">=17"
     },
     "suggests": {
