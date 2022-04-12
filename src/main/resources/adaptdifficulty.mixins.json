@@ -4,9 +4,7 @@
   "package": "thepoultryman.adaptdifficulty.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-  ],
-  "client": [
-      "AdaptiveDifficultyMixin"
+      "HostileMobDamageReducer"
   ],
   "injectors": {
     "defaultRequire": 1
